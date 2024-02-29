@@ -1,0 +1,20 @@
+<div class="filter">
+    <div class="form">
+        <div class="form__name">
+            <mat-form-field class="example-full-width">
+                <mat-label>Nome:</mat-label>
+                <input matInput placeholder="Digite o nome a ser filtrado" value="">
+              </mat-form-field>
+        </div>
+        <div class="form__date-picker">
+            <mat-label>Data de cadastro:</mat-label>
+            <mat-date-range-input [rangePicker]="picker">
+              <input matStartDate placeholder="Start date">
+              <input matEndDate placeholder="End date">
+            </mat-date-range-input>
+            <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+        </div>
+    </div>
+</div>
