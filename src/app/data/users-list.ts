@@ -110,7 +110,7 @@ export const UsersList: IUser[] = [
         funcao: "Diretor",
         dataCadastro: "2023-08-20T09:00:00.000Z",
         status: {
-            online: false,zx
+            online: false, 
             verificado: true,
             assinaturaAtiva: false,
             ultimoAcesso: "2023-08-25T09:00:00.000Z"
