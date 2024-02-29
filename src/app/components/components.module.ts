@@ -6,24 +6,29 @@ import { FormsModule } from '@angular/forms';
 import { provideNativeDateAdapter } from "@angular/material/core";
 import {provideAnimations} from '@angular/platform-browser/animations';
 import { CommonModule } from "@angular/common";
+import { UsersListComponent } from './users-list/users-list.component';
+import { PipesModule } from "../pipes/pipes.module";
 
 @NgModule({
     declarations: [
         UserDetailsComponent,
-        FilterComponent
+        FilterComponent,
+        UsersListComponent
   ],
     imports: [
         AngularMaterialModule,
         FormsModule,
-        CommonModule
+        CommonModule,
+        PipesModule
     ], 
     exports: [
         UserDetailsComponent,
+        UsersListComponent,
         FilterComponent,
     ],
     providers: [provideNativeDateAdapter(), provideAnimations()]
 })
 
 export class ComponentsModule{
-    
+
 }

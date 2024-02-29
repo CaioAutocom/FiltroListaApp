@@ -1,6 +1,7 @@
 .container {
     display: flex;
     height: 100vh;
+    background-color: lightblue;
 }
 
 .left-container {
@@ -11,13 +12,13 @@
 }
 
 .top-div {
-    flex-grow: 1;
     /* Preenche todo o espaço disponível */
+    flex-grow: 1;
+    background-color: rgba(137, 218, 245, 0.418);
 }
 
 .main-left-div {
     height: 80%;
-    /* Ocupa 80% da altura do seu contêiner pai */
     background-color: lightblue;
 }
 
