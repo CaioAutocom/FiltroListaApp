@@ -18,7 +18,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
         MatDatepickerModule, 
         MatNativeDateModule,
         MatSelectModule,
-        MatButtonModule
+        MatButtonModule,
     ],
     exports: [
         MatListModule,

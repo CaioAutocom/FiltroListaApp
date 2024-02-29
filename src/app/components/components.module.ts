@@ -3,6 +3,9 @@ import { AngularMaterialModule } from "../angular-material/angular-material.modu
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { FilterComponent } from './filter/filter.component';
 import { FormsModule } from '@angular/forms';
+import { provideNativeDateAdapter } from "@angular/material/core";
+import {provideAnimations} from '@angular/platform-browser/animations';
+import { CommonModule } from "@angular/common";
 
 @NgModule({
     declarations: [
@@ -11,12 +14,14 @@ import { FormsModule } from '@angular/forms';
   ],
     imports: [
         AngularMaterialModule,
-        FormsModule
+        FormsModule,
+        CommonModule
     ], 
     exports: [
         UserDetailsComponent,
         FilterComponent,
-    ]
+    ],
+    providers: [provideNativeDateAdapter(), provideAnimations()]
 })
 
 export class ComponentsModule{
